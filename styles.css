@@ -1,7 +1,70 @@
 body {
-  font-family: Arial, sans-serif;
+ font-family: Arial, sans-serif;
+ margin:0;
+ padding:0;
 }
 
-h1 {
-  color: #00698f;
+header {
+ background-color:#333;
+ color:#fff;
+ padding-top:.5em ;
+ padding-bottom:.5em ;
+ text-align:center;
+}
+
+header img{
+ width :100% ;
+ height :200px ;
+ object-fit :cover ;
+ margin-bottom :20px ;
+
+}
+
+#habitaciones {
+ display:flex; 
+ flex-wrap :wrap ; 
+ justify-content:center; 
+ padding-top:.5em ; 
+}
+
+.habitacion{
+ background-color:#f7f7f7; 
+ margin-right:.5em ; 
+ margin-left:.5em ; 
+ margin-bottom :.5em ;  
+ width :300px ;
+
+ box-shadow:
+0px .3px .6px rgba(34,35,58,.4);
+
+ border-radius :.15rem;
+
+}
+.habitacion img{
+ width :100% ; height :
+150px; object-fit :
+cover ;
+
+ }
+ footer {
+	background-color:#333; color:
+ #fff;padding-top:
+.3rem;padding-
+bottom.:.3rem;text-align:center;
+
+ }
+
+ a {color:
+#fff;text-decoration:none;}
+
+ a:hover {color:
+ #ccc;}
+
+/* Media queries para responsive design */
+@media (max-width:768px){
+ header img{height:auto;width:auto;}
+ #habitaciones{flex-direction:
+column;}
+ .habitacion{width:auto;margin-right:.25rem;margin-left
+:.25rem;}
 }
